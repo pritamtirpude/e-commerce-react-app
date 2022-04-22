@@ -20,7 +20,6 @@ export const NavLinksContainer = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  height: 100%;
-  width: 70px;
-  padding: 25px 0px;
+  padding: 25px 25px;
+  cursor: pointer;
 `;
