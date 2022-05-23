@@ -20,6 +20,10 @@ export const BaseButton = styled.button`
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: 800px) {
+    min-width: unset;
+  }
+
   &:hover {
     background-color: white;
     color: black;

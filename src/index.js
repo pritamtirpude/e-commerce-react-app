@@ -6,7 +6,6 @@ import { Elements } from "@stripe/react-stripe-js";
 import { store, persistor } from "./store/store";
 import { stripePromise } from "./utils/stripe/stripe.util";
 import App from "./App";
-import "./index.scss";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
