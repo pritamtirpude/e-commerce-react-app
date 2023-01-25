@@ -5,6 +5,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { Elements } from "@stripe/react-stripe-js";
 import { store, persistor } from "./store/store";
 import { stripePromise } from "./utils/stripe/stripe.util";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import App from "./App";
 
 const container = document.getElementById("root");
@@ -20,3 +21,5 @@ root.render(
     </PersistGate>
   </Provider>
 );
+
+serviceWorkerRegistration.register();
